@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>ITMD-541 LAB-3 Vidya Gangaswamy</h1>
+
+        <h2>Tip Calculator</h2>
+        <form id="tip-calculator-form">
+            <div class="group">
+                <label for="bill-total">Bill Total:</label>
+                <input type="text" id="bill-total" name="bill-total" placeholder="Enter Bill Total" class="input-left">
+                <span id="error-message" class="error-message"></span>
+            </div>
+
+            <div class="group">
+                <label for="tip-range">Tip:</label>
+                <input type="range" id="tip-range" name="tip-range" min="0" max="100" class="input-left" value="0">
+            </div>
+
+            <div class="group">
+                <label for="disabled-tip-percentage">Tip Percentage:</label>
+                <input type="text" id="disabled-tip-percentage" name="disabled-tip-percentage" class="disabled-field"
+                    disabled>
+            </div>
+
+            <div class="group">
+                <label for="disabled-tip-amount">Tip Amount:</label>
+                <input type="text" id="disabled-tip-amount" name="disabled-tip-amount" class="disabled-field" disabled>
+            </div>
+
+            <div class="group">
+                <label for="disabled-total-bill">Total Bill with Tip:</label>
+                <input type="text" id="disabled-total-bill" name="disabled-total-bill" class="disabled-field" disabled>
+            </div>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
