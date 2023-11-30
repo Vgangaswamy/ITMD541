@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Sunrise Sunset Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sunrise Sunset Dashboard &#127774</h1>
+    </header>
+
+    <main>
+
+
+        <section id="search-section">
+            <h2>Search the Location here!</h2>
+            <div class="search-options">
+                <button id="currentLocationBtn">Use Current Location</button>
+                <input type="text" id="searchInput" placeholder="Enter a location">
+                <button id="searchBtn">Search</button>
+            </div>
+        </section>
+
+        <section id="result-section">
+            <div id="sunriseSunsetInfo" class="result-info placeholder-content">
+                <!-- Placeholder content goes here -->
+            </div>
+            <div id="errorDisplay" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p> Powered by </p>
+        <a href="https://sunrisesunset.io/api/">
+            <h3>SunriseSunset API</h3>
+        </a> <a href="https://geocode.maps.co/">
+            <h3>Geocoding API</h3>
+        </a>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
